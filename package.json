@@ -1,0 +1,22 @@
+{
+  "name": "@sm1/aem-clientlibs-copier",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""    
+  },
+  "bin" : {
+    "aem-clientlibs-copier" : "./bin/index-global.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuri92/aem-clientlibs-copier.git"
+  },
+  "author": "Yuri Simeone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuri92/aem-clientlibs-copier/issues"
+  },
+  "homepage": "https://github.com/yuri92/aem-clientlibs-copier#readme"
+}
