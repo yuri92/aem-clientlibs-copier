@@ -110,7 +110,6 @@ const start = () => {
 
     });
 
-}   
+}
 
-start()
 exports.start = start;
