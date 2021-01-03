@@ -51,7 +51,7 @@ const start = () => {
     if(!config) return;
 
     // mostro a video la versione corrente
-    const currentVersion = JSON.parse(path.join(__dirname, '..', 'package.json')).version
+    const currentVersion = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'))).version
     figlet(`Copier ${currentVersion}`, {
         font: 'Big',
     }, (err, asciiArt) => {
