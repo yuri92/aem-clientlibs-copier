@@ -5,6 +5,7 @@ const fs = require('fs');
 const glob = require("glob")
 const figlet = require('figlet');
 const xml2js = require('xml2js');
+const path = require('path');
 
 const ncp = require('ncp').ncp;
 ncp.limit = 16;
@@ -50,7 +51,7 @@ const start = () => {
     if(!config) return;
 
     // mostro a video la versione corrente
-    const currentVersion = JSON.parse(fs.readFileSync('./package.json')).version
+    const currentVersion = JSON.parse(path.join(__dirname, '..', 'package.json')).version
     figlet(`Copier ${currentVersion}`, {
         font: 'Big',
     }, (err, asciiArt) => {
